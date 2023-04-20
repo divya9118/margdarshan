@@ -63,7 +63,7 @@ img, svg {
   
 }
 .fcfs-form, .sticky-sidebar.social-links {
-  background: no-repeat padding-box #fff;
+  background: no-repeat padding-box rgb(255, 177, 25,0.1);
   box-shadow: 0 3px 6px #00000029;
 }
 .d-md-block {
@@ -156,7 +156,7 @@ img, svg {
 
 #header .main-head{
   color: #000;
-  background-color: rgb(187, 166, 6);
+  background-color: rgb(255, 177, 25);
   padding: 6px 10px ; 
 }
 #header .students {
@@ -248,7 +248,7 @@ img, svg {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: rgb(187, 166, 6);
+  color: rgb(255, 177, 25);
 }
 
 .navbar .getstarted,
@@ -256,16 +256,16 @@ img, svg {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #000;
+  color: #fff;
   font-size: 14px;
-  border: 2px solid rgb(187, 166, 6);
+  border: 2px solid rgb(255, 177, 25);
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
-  background: rgb(187, 166, 6);
+  color: #000;
+  background: rgb(255, 177, 25);
 }
 
 .navbar .dropdown ul {
@@ -521,11 +521,11 @@ img, svg {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #000000;
-  background: #f6de2d;
+  background: rgb(255, 177, 25);
 }
 
 #hero .btn-get-started:hover {
-  background:  #f6de2d;
+  background:  rgb(255, 177, 25);
 }
 
 #hero .btn-watch-video {
@@ -1051,7 +1051,7 @@ background-color: red !important;
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(187, 166, 6,0.9), rgba(187, 166, 6, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 177, 25,0.9), rgba(255, 177, 25, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
 }
 
