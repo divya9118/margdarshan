@@ -40,6 +40,8 @@ h6 {
   position: fixed;
   top: 62%;
   z-index: 999999;
+   background: no-repeat padding-box #fff;
+   box-shadow: 0 3px 6px #00000029;
 }
 .social_sticky_wrap {
   padding: 10px;
@@ -69,6 +71,7 @@ img, svg {
 .d-md-block {
   display: block!important;
 }
+
 
 /*ul {
   display: block;
