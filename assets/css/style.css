@@ -510,7 +510,7 @@ img, svg {
   font-size: 24px;
 }
 #hero .hero-img{
-  background-image: radial-gradient(#fff 20% ,rgb(0, 208, 255) 80% );
+  background-image: radial-gradient(#fff 20% ,rgb(255,177,25) );
   color:#000;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   border-radius:10px;
@@ -637,13 +637,6 @@ img, svg {
   padding: 10px;
   border-radius: 5px;
   transition: 0.5s;
-  height: 100%;
-}
-
-.hero .member .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
 }
 
 .hero .member .pic img {
