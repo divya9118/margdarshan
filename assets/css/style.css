@@ -472,7 +472,7 @@ img, svg {
   border-radius: 20px;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img{
-  height: 240px;
+  height: 280px;
 }
 @media (max-width: 768px) {
   .carousel-inner>.item>a>img, .carousel-inner>.item>img{
@@ -506,8 +506,16 @@ img, svg {
   margin-bottom: 50px;
   font-size: 24px;
 }
+#hero .hero-img{
+  background-image: radial-gradient(#fff 20% ,rgb(0, 208, 255) 80% );
+  color:#000;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius:10px;
 
-
+}
+#hero .selections{
+  margin-bottom: 10px;
+}
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
@@ -622,6 +630,62 @@ img, svg {
 .sm_icon.yt{
   height: 15px;
 }
+.hero .member {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.hero .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.hero .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.hero .member:hover {
+  transform: translateY(-10px);
+}
+
+.hero .member .member-info {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.hero .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #340e85;
+}
+
+.hero .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.hero .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -733,7 +797,7 @@ background-color: red !important;
       height: 100px;
       background:#340e85;
       margin: 0;
-      padding: 25px;
+      padding: 15px;
       border-radius: 100%;
       -moz-border-radius: 100%;
       -webkit-border-radius: 100%;
