@@ -475,7 +475,7 @@ img, svg {
   border-radius: 20px;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img{
-  height: 280px;
+  height: 240px;
 }
 @media (max-width: 768px) {
   .carousel-inner>.item>a>img, .carousel-inner>.item>img{
@@ -509,16 +509,8 @@ img, svg {
   margin-bottom: 50px;
   font-size: 24px;
 }
-#hero .hero-img{
-  background-image: radial-gradient(#fff 20% ,rgb(0, 208, 255) 80% );
-  color:#000;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  border-radius:10px;
 
-}
-#hero .selections{
-  margin-bottom: 10px;
-}
+
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
@@ -633,62 +625,6 @@ img, svg {
 .sm_icon.yt{
   height: 15px;
 }
-.hero .member {
-  padding: 10px;
-  border-radius: 5px;
-  transition: 0.5s;
-  height: 100%;
-}
-
-.hero .member .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
-}
-
-.hero .member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.hero .member:hover {
-  transform: translateY(-10px);
-}
-
-.hero .member .member-info {
-  padding-left: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-.hero .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #340e85;
-}
-
-.hero .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.hero .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -800,7 +736,7 @@ background-color: red !important;
       height: 100px;
       background:#340e85;
       margin: 0;
-      padding: 15px;
+      padding: 25px;
       border-radius: 100%;
       -moz-border-radius: 100%;
       -webkit-border-radius: 100%;
@@ -1868,16 +1804,16 @@ background-color: red !important;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
-  background: #340e85;
+  font-size: 15px;
+  background: #fec238;
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f3f5fa;
+  background: #27d11e;
   text-align: center;
   font-size: 15px;
-  color: #444444;
+  color: #090505;
 }
 
 #footer .footer-newsletter h4 {
@@ -1886,12 +1822,12 @@ background-color: red !important;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #340e85;
+  color: #324b9a;
 }
 
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #f2f1f1;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
@@ -1927,7 +1863,7 @@ background-color: red !important;
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #fec238;
 }
 
 #footer .footer-top .footer-contact {
@@ -1949,7 +1885,7 @@ background-color: red !important;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  color: #0f0909;
 }
 
 #footer .footer-top h4 {
@@ -1988,7 +1924,7 @@ background-color: red !important;
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #0b0909;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
