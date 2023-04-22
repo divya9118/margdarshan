@@ -476,7 +476,7 @@ img, svg {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-.carousel-inner{
+#hero .carousel-inner{
   margin: 10px auto;
   border-radius: 20px;
 }
@@ -639,37 +639,55 @@ img, svg {
 
 .sm_icon.yt{
   height: 15px;
-}
-.hero .member {
+ }
+ /*
+ .member {
   padding: 10px;
   border-radius: 5px;
   transition: 0.5s;
+} */
+
+.member {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero .member .pic img {
+ .member .pic img {
   transition: ease-in-out 0.3s;
 }
 
-.hero .member:hover {
+.member:hover {
   transform: translateY(-10px);
 }
 
-.hero .member .member-info {
-  padding-left: 30px;
+ .member .member-info {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
+}
+.filter-app .member{
+  background-color: #340e85;
+}
+.filter-web .member{
+  background-color: rgb(255, 177, 25);
+}
+.filter-app h4, .filter-app p, .filter-app span{
+  color: #fff;
 }
 
 
-.hero .member h4 {
+.member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #340e85;
 }
 
-.hero .member span {
+.member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -677,7 +695,7 @@ img, svg {
   font-weight: 500;
 }
 
-.hero .member span::after {
+.member span::after {
   content: "";
   position: absolute;
   display: block;
@@ -1175,7 +1193,20 @@ background-color: red !important;
     justify-content: flex-end;
   }
 }
+/*--------------------------------------------------------------
+# Alumni
+--------------------------------------------------------------*/
 
+.alumni{
+  background-image: url(../img/alumni.jpg);
+  background-size: 100% 100%;
+  height: 400px;
+  margin: 10px;
+}
+.alumni-border{
+  border: 10px solid rgb(255, 177, 25);
+  background-color: rgb(255, 177, 25);
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1897,7 +1928,9 @@ background-color: red !important;
   font-weight: 600;
   color: #324b9a;
 }
-
+#footer .carousel-caption h3,#footer .carousel-caption p{
+color: #000;
+}
 #footer .footer-newsletter form {
   margin-top: 30px;
   background: #f2f1f1;
