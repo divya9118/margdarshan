@@ -74,10 +74,6 @@ img, svg {
   background: no-repeat padding-box rgb(255, 255, 255,0.1);
   box-shadow: 0 3px 6px #00000029;
 }
-.d-md-block {
-  display: block!important;
-}
-
 
 /*ul {
   display: block;
@@ -506,11 +502,20 @@ img, svg {
 #hero {
   width: 100%;
   padding: 5px 20px;
-  margin-top: 8% !important;
+  margin-top: 8% !important; 
 }
 
 #hero .container {
   padding-top: 5px;
+}
+@media (max-width: 991px) {
+  .hero-c{
+    padding-top: 100px;
+  }
+  #hero {   
+    padding: 5px;  
+  }
+
 }
 
 #hero h1 {
@@ -568,7 +573,7 @@ img, svg {
   transition: 0.5s;
   margin: 10px 0 0 25px;
   color: #fff;
-  line-height: 1;
+  letter-spacing: 1px;
   background-color: red;
 }
 
@@ -1112,9 +1117,11 @@ background-color: red !important;
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
    background-image: radial-gradient(#fff 20% , #340e85);
+   width:100%;
 }
 .services .yellow-grad {
    background-image: radial-gradient(#fff 20% , rgb(255, 177, 25));
+   width:100%;
 }
 
 .services .icon-box .icon {
@@ -1209,7 +1216,7 @@ background-color: red !important;
 --------------------------------------------------------------*/
 
 .alumni{
-  background-image: url(../img/alumni.jpg);
+  background-image: url(../img/alumni.png);
   background-size: 100% 100%;
   height: 400px;
   margin: 10px;
@@ -1217,6 +1224,13 @@ background-color: red !important;
 .alumni-border{
   border: 10px solid rgb(255, 177, 25);
   background-color: rgb(255, 177, 25);
+  min-height: 210px;
+}
+#alumni .section-title h2{
+  color:#340e85 ;
+}
+#alumni .section-title h2 span{
+  color: #8d8c8c ;
 }
 /*--------------------------------------------------------------
 # Portfolio
