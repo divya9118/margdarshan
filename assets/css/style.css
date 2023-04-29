@@ -39,6 +39,310 @@ h6 {
 .black-clr{
   color: #000 !important;
 }
+
+/*=====================================MODAL START==============================================*/
+
+/*.modal-content {
+  border-radius: 0%;
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  box-shadow: none;
+  border: none;
+}*/
+@media (min-width: 768px)
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.modal-header {
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0px;
+  border: none;
+
+  padding: 0px;
+  border-bottom: 1px solid #e5e5e5;
+}
+div {
+  display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.modal-header .close {
+    margin-top: 0px;
+    margin-right: -470px;
+    float: right;
+    width: 30px;
+    height: 40px;
+    line-height: 30px;
+    background: hsl(0, 95%, 50%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: none;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transition: all ease .6s;
+    -moz-transition: all ease .6s;
+    -webkit-transition: all ease .6s;
+    -o-transition: all ease .6s;
+}
+
+button{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: none;
+  overflow: visible;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  
+}
+.fa, .fas {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa-times:before {
+  content: "\f00d";
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+/*.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}*/
+.close {
+  float: right;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1;
+  color: #e53434;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+.modal-header:after{
+  clear: both;
+  display: table;
+    content: " ";
+}
+
+
+.modal-body {
+  background: #eee0e0;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  position: relative;
+}
+.popup-form {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+@media (min-width: 1200px)
+.col-lg-12 {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.col-xs-12, .col-md-12, .col-sm-12{
+  position: relative;
+  min-height: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+.col-xs-12 {
+  width: 100%;
+  float: left;
+}
+
+.img-responsive{
+
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+.modal-header:before{
+  display: table;
+    content: " ";
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.modal-dialog {
+  width: 760px;
+  top: 10%;
+  position: relative;
+  width: auto;
+  margin: 200px 50px;
+  
+}
+
+}
+.modal.fade .model-dialog{
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  -webkit-transform: translate(0,-25%);
+  -ms-transform: translate(0,-25%);
+  -o-transform: translate(0,-25%);
+  transform: translate(0,-25%);
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 480px)
+.modal-dialog {
+    width: 260px;
+    margin: 50px auto;
+}
+
+@media (min-width: 768px)
+.modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+}
+
+#myModel{
+  display: block;
+
+}
+@media (min-width: 768px)
+#myModel{
+  display: block;
+  padding-right: 17px;
+
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.fade.in {
+  opacity: 1;
+}
+/*.fade {
+  opacity: 1;
+}*/
+.modal {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0.5;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+/*==================================MODAL END================================================*/
+
 /*--===========================================STICKY SIDE BAR START ===========================================================*/
 .sticky-sidebar.social-links {
   border-radius: 0 15px 15px 0;
