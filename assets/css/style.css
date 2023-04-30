@@ -121,7 +121,7 @@ h6 {
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .modal-content {
-  position: relative;
+  position: fixed; /*== position change from relative to fixed==*/
   background-color: #fff;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
