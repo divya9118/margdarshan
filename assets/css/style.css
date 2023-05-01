@@ -1264,7 +1264,7 @@ a {
 }
 
 .services .icon-box h4 a {
-  font-weight: bold;
+  font-weight:600;
   color: black;
   transition: ease-in-out 0.3s;
 }
@@ -1281,6 +1281,15 @@ a {
 
 .services .icon-box:hover h4 a {
   color: #340e85;
+}
+
+@media (max-width: 769px) {
+  .services .icon-box {  
+    padding: 30px 15px;
+  }
+  .services .icon-box h4 a {  
+    font-size:20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1358,10 +1367,10 @@ a {
 #alumni .section-title h2 span {
   color: #8d8c8c;
 }
-
+/* 
 #alumni .carousel-inner>.item>a>img, .carousel-inner>.item>img{
   height: 240px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio

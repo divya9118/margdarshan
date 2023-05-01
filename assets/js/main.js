@@ -15,7 +15,7 @@
     el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
-    } else {
+    } else if(el) {
       return document.querySelector(el)
     }
   }
@@ -258,6 +258,19 @@
 })()
 function closeModal(){
   document.getElementById("myModal").classList.remove("show");
-  document.getElementById("myModalBackdrop").classList.remove("modal-backdrop");
-  document.getElementById("myModalBackdrop").classList.remove("in");
+  document.getElementById("backdrop").classList.remove("modal-backdrop");
+  document.getElementById("backdrop").classList.remove("in");
+}
+
+function closeModal1(){
+  document.getElementById("myModal1").classList.remove("show");
+}
+function closeModal2(){
+  document.getElementById("myModal2").classList.remove("show");
+}
+function openModal1(){
+  document.getElementById("myModal1").classList.add("show");
+}
+function openModal2(){
+  document.getElementById("myModal2").classList.add("show");
 }
