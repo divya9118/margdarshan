@@ -9,9 +9,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-size: 14px;
   color: #000;
+  font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 a {
@@ -20,42 +22,53 @@ a {
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #340e85;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Jost", sans-serif;
-}
-.bg-yellow{
+
+.bg-yellow {
   background-color: rgb(255, 177, 25) !important;
 }
+.clr-yellow {
+ color: rgb(255, 177, 25) !important;
+}
+.clr-violet {
+  color: #340e85!important;
+ }
 
-.black-clr{
+.black-clr {
   color: #000 !important;
 }
+
+/*==================================MODAL=========================*/
+
+
+
+#myModal .btn-get-started {
+  background-color: #340e85;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
+
 
 /*==================================know about us more button start=========================*/
 
 .button-84 {
- 
+
   align-items: center;
   background-color: initial;
   background-image: linear-gradient(#464d55, #25292e);
   border-radius: 8px;
   border-width: 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
   box-sizing: border-box;
   color: red;
   cursor: pointer;
   display: inline-flex;
   flex-direction: column;
-  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 18px;
   height: 52px;
   justify-content: center;
@@ -76,7 +89,7 @@ h6 {
 }
 
 .button-84 a:hover {
-  
+
   color: #041a2657;
   text-decoration: double;
 }
@@ -104,76 +117,9 @@ h6 {
 
 
 
-.pl-1, .px-1 {
-  padding-left: 2.25rem!important;
-}
-.button-17 {
-  align-items: center;
-  appearance: none;
-  background-color: #fff;
-  border-radius: 24px;
-  border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-  box-sizing: border-box;
-  color: #3c4043;
-  cursor: pointer;
-  display: inline-flex;
-  fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
-  overflow: visible;
-  padding: 2px 59px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: auto;
-  will-change: transform,opacity;
-  z-index: 0;
-}
-
-.button-17:hover {
-  background: #F6F9FE;
-  color: #175fa6;
-}
-
-.button-17:active {
-  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-  outline: none;
-}
-
-.button-17:focus {
-  outline: none;
-  border: 2px solid #de1313;
-}
-
-.button-17:not(:disabled) {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.button-17:not(:disabled):hover {
-  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
-}
-
-.button-17:not(:disabled):focus {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.button-17:not(:disabled):active {
-  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
-}
-
-.button-17:disabled {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+.pl-1,
+.px-1 {
+  padding-left: 2.25rem !important;
 }
 
 /*======================================================================button on modal end==============================================================*/
@@ -188,32 +134,41 @@ h6 {
   position: fixed;
   top: 62%;
   z-index: 999999;
-   background: no-repeat padding-box #fff;
-   box-shadow: 0 3px 6px #00000029;
+  background: no-repeat padding-box #fff;
+  box-shadow: 0 3px 6px #00000029;
 }
+
 .social_sticky_wrap {
   padding: 10px;
 }
+
 .vertical_links {
   margin-top: 10px;
 }
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
+
 ul.vertical_links li {
   margin-bottom: 10px !important;
 }
+
 a {
   color: #0d6efd;
   text-decoration: underline;
 }
-img, svg {
+
+img,
+svg {
   vertical-align: middle;
-  
+
 }
-.fcfs-form, .sticky-sidebar.social-links {
-  background: no-repeat padding-box rgb(255, 255, 255,0.1);
+
+.fcfs-form,
+.sticky-sidebar.social-links {
+  background: no-repeat padding-box rgb(255, 255, 255, 0.1);
   box-shadow: 0 3px 6px #00000029;
 }
 
@@ -253,7 +208,7 @@ img, svg {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgb(0,0,0,0.5);
+  background: rgb(0, 0, 0, 0.5);
 }
 
 #preloader:before {
@@ -303,32 +258,35 @@ img, svg {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 #header .logo img {
- height:70px;
-/*=========================================width is reduce from 350px to 320px============================*/
- width:320px;
+  height: 70px;
 }
+
 #header .logo p {
   font-size: 20px !important;
 }
 
-#header .main-head{
+#header .main-head {
   color: #000;
   background-color: rgb(255, 177, 25);
-  padding: 6px 10px ; 
+  padding: 6px 10px;
 }
+
 #header .students {
   float: left;
 }
-.main-link{
+
+.main-link {
   color: red;
   font-weight: 600;
 }
 
-.students img{
-  width:30px;
+.students img {
+  width: 30px;
   height: 30px;
 }
+
 #header .courses {
   float: right;
   font-size: 13px;
@@ -338,7 +296,7 @@ img, svg {
   transition: 0.3s;
 }
 
-#header .sec-head{
+#header .sec-head {
   color: #fff;
   background-color: rgb(38, 38, 38);
 
@@ -346,6 +304,7 @@ img, svg {
 
 
 @media (max-width: 768px) {
+
   #header .students,
   #header .courses {
     text-align: center;
@@ -495,24 +454,25 @@ img, svg {
 
 
 /* For whatsapp */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
+
 /* For whatsapp ends here */
 
 /**
@@ -625,15 +585,16 @@ img, svg {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-#hero .carousel-inner{
+
+#hero .carousel-inner {
   margin: 10px auto;
   border-radius: 20px;
 }
-.carousel-inner>.item>a>img, .carousel-inner>.item>img{
-  height: 240px;
-}
+
 @media (max-width: 768px) {
-  .carousel-inner>.item>a>img, .carousel-inner>.item>img{
+
+  .carousel-inner>.item>a>img,
+  .carousel-inner>.item>img {
     height: auto;
   }
 }
@@ -644,18 +605,20 @@ img, svg {
 #hero {
   width: 100%;
   padding: 5px 20px;
-  margin-top: 8% !important; 
+  margin-top: 8% !important;
 }
 
 #hero .container {
   padding-top: 5px;
 }
+
 @media (max-width: 991px) {
-  .hero-c{
+  .hero-c {
     padding-top: 100px;
   }
-  #hero {   
-    padding: 5px;  
+
+  #hero {
+    padding: 5px;
   }
 
 }
@@ -673,20 +636,21 @@ img, svg {
   margin-bottom: 50px;
   font-size: 24px;
 }
-#hero .hero-img{
-  background-image: radial-gradient(#fff 20% ,rgb(255,177,25) );
-  color:#000;
+
+#hero .hero-img {
+  background-image: radial-gradient(#fff 20%, rgb(255, 177, 25));
+  color: #000;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  border-radius:10px;
+  border-radius: 10px;
 }
-#hero .main-head{
+
+#hero .main-head {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  border-radius:10px;
+  border-radius: 10px;
   padding: 15px;
 }
 
-#hero .btn-get-started {
-  font-family: "Jost", sans-serif;
+.btn-get-started {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -700,8 +664,8 @@ img, svg {
   background: rgb(255, 177, 25);
 }
 
-#hero .btn-get-started:hover {
-  background:  rgb(255, 177, 25);
+.btn-get-started:hover {
+  background: rgb(255, 177, 25);
 }
 
 #hero .btn-watch-video {
@@ -775,7 +739,7 @@ img, svg {
     width: 80%;
   }
 
-  #hero .btn-get-started {
+  .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
@@ -791,14 +755,15 @@ img, svg {
   }
 }
 
-.sm_icon{
+.sm_icon {
   height: 22px;
 }
 
-.sm_icon.yt{
+.sm_icon.yt {
   height: 15px;
- }
- /*
+}
+
+/*
  .member {
   padding: 10px;
   border-radius: 5px;
@@ -814,7 +779,7 @@ img, svg {
   align-items: center;
 }
 
- .member .pic img {
+.member .pic img {
   transition: ease-in-out 0.3s;
 }
 
@@ -822,19 +787,24 @@ img, svg {
   transform: translateY(-10px);
 }
 
- .member .member-info {
+.member .member-info {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
 }
-.filter-app .member{
+
+.filter-app .member {
   background-color: #340e85;
 }
-.filter-web .member{
+
+.filter-web .member {
   background-color: rgb(255, 177, 25);
 }
-.filter-app h4, .filter-app p, .filter-app span{
+
+.filter-app h4,
+.filter-app p,
+.filter-app span {
   color: #fff;
 }
 
@@ -917,9 +887,10 @@ section {
   margin-bottom: 0;
 }
 
-.flex-direction-column{
+.flex-direction-column {
   flex-direction: column;
 }
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -940,60 +911,70 @@ section {
   filter: none;
   transform: scale(1.1);
 }
-.clients .cat{
+
+.clients .cat {
   font-size: 20px;
- font-weight: 700;
- color: white;
+  font-weight: 700;
+  color: white;
 }
+
 @media (max-width: 768px) {
   .clients img {
     max-width: 40%;
   }
 }
-.carousel-control.right, .carousel-control.left{
-  background-image:none !important;
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none !important;
 }
-.carousel-indicators{
+
+.carousel-indicators {
   margin: 5px auto;
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
   background-color: #000 !important;
   border: black !important;
 }
-.carousel-indicators li.active{
-background-color: red !important;
+
+.carousel-indicators li.active {
+  background-color: red !important;
 }
+
 /*  #Advantage Icon
 */
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {
-  .advantage-box  a {
-    width: 90px; 
+  .advantage-box a {
+    width: 90px;
     height: 90px;
     padding: 25px;
-  } 
   }
+}
 
-  .advantage-box  a {
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      width: 100px;
-      height: 100px;
-      background:#340e85;
-      margin: 0;
-      padding: 25px;
-      border-radius: 100%;
-      -moz-border-radius: 100%;
-      -webkit-border-radius: 100%;
-  }
-  a {
-      color: #383838;
-      text-decoration: none;
-  }
-  a {
-      background-color: transparent;
-  }
+.advantage-box a {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: #340e85;
+  margin: 0;
+  padding: 25px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+
+a {
+  color: #383838;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+}
 
 /*--------------------------------------------------------------
 # About Us
@@ -1031,7 +1012,6 @@ background-color: red !important;
 }
 
 .about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1051,12 +1031,15 @@ background-color: red !important;
   color: #fff;
   text-decoration: none;
 }
-.about p{
-  font-size: 20px;
+
+.about-us {
+  font-size: 16px;
+  line-height: 28px;
 }
-.about h1{
+
+.about h1 {
   font-weight: bold;
-  color:#340e85 ;
+  color: #340e85;
 }
 
 /*--------------------------------------------------------------
@@ -1111,7 +1094,6 @@ background-color: red !important;
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1195,7 +1177,6 @@ background-color: red !important;
   font-weight: 700;
   font-size: 32px;
   color: #340e85;
-  font-family: "Poppins", sans-serif;
 }
 
 .skills .content ul {
@@ -1230,7 +1211,6 @@ background-color: red !important;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
   color: #340e85;
 }
 
@@ -1258,12 +1238,13 @@ background-color: red !important;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-   background-image: radial-gradient(#fff 20% , #340e85);
-   width:100%;
+  background-image: radial-gradient(#fff 20%, #340e85);
+  width: 100%;
 }
+
 .services .yellow-grad {
-   background-image: radial-gradient(#fff 20% , rgb(255, 177, 25));
-   width:100%;
+  background-image: radial-gradient(#fff 20%, rgb(255, 177, 25));
+  width: 100%;
 }
 
 .services .icon-box .icon {
@@ -1284,7 +1265,7 @@ background-color: red !important;
 
 .services .icon-box h4 a {
   font-weight: bold;
-  color:black;
+  color: black;
   transition: ease-in-out 0.3s;
 }
 
@@ -1306,7 +1287,7 @@ background-color: red !important;
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(255, 177, 25,0.9), rgba(255, 177, 25, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 177, 25, 0.9), rgba(255, 177, 25, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
 }
 
@@ -1321,7 +1302,6 @@ background-color: red !important;
 }
 
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1353,27 +1333,36 @@ background-color: red !important;
     justify-content: flex-end;
   }
 }
+
 /*--------------------------------------------------------------
 # Alumni
 --------------------------------------------------------------*/
 
-.alumni{
+.alumni {
   background-image: url(../img/alumni.png);
   background-size: 100% 100%;
   height: 400px;
   margin: 10px;
 }
-.alumni-border{
+
+.alumni-border {
   border: 10px solid rgb(255, 177, 25);
   background-color: rgb(255, 177, 25);
   min-height: 210px;
 }
-#alumni .section-title h2{
-  color:#340e85 ;
+
+#alumni .section-title h2 {
+  color: #340e85;
 }
-#alumni .section-title h2 span{
-  color: #8d8c8c ;
+
+#alumni .section-title h2 span {
+  color: #8d8c8c;
 }
+
+#alumni .carousel-inner>.item>a>img, .carousel-inner>.item>img{
+  height: 240px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1393,7 +1382,6 @@ background-color: red !important;
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1657,7 +1645,6 @@ background-color: red !important;
   font-size: 48px;
   color: #340e85;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -1712,7 +1699,6 @@ background-color: red !important;
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
   transition: 0.3s;
   border: 1px solid #340e85;
 }
@@ -1782,7 +1768,6 @@ background-color: red !important;
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -2095,9 +2080,12 @@ background-color: red !important;
   font-weight: 600;
   color: #324b9a;
 }
-#footer .carousel-caption h3,#footer .carousel-caption p{
-color: #000;
+
+#footer .carousel-caption h3,
+#footer .carousel-caption p {
+  color: #000;
 }
+
 #footer .footer-newsletter form {
   margin-top: 30px;
   background: #f2f1f1;
@@ -2136,7 +2124,7 @@ color: #000;
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background:rgb(255, 177, 25);
+  background: rgb(255, 177, 25);
 }
 
 #footer .footer-top .footer-contact {
@@ -2157,7 +2145,6 @@ color: #000;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
   color: #0f0909;
 }
 

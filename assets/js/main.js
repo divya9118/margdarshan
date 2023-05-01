@@ -256,3 +256,8 @@
   });
 
 })()
+function closeModal(){
+  document.getElementById("myModal").classList.remove("show");
+  document.getElementById("myModalBackdrop").classList.remove("modal-backdrop");
+  document.getElementById("myModalBackdrop").classList.remove("in");
+}
