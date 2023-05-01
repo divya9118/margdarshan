@@ -995,6 +995,30 @@ background-color: red !important;
       background-color: transparent;
   }
 
+
+
+/* Review section */
+
+.review{
+  background-image: url(../img/alumni.png);
+  background-size: 100% 100%;
+  height: 400px;
+  margin: 10px;
+}
+.review-border{
+  border: 10px solid rgb(255, 177, 25);
+  background-color: rgb(255, 177, 25);
+  min-height: 210px;
+}
+#review .section-title h2{
+  color:#340e85 ;
+}
+#review .section-title h2 span{
+  color: #8d8c8c ;
+}
+
+
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
