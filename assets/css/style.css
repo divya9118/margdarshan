@@ -1391,10 +1391,10 @@ a {
 #alumni .section-title h2 span {
   color: #8d8c8c;
 }
-/* 
-#alumni .carousel-inner>.item>a>img, .carousel-inner>.item>img{
-  height: 240px;
-} */
+
+.alumni-img{
+  height: 240px !important;
+} 
 
 /*--------------------------------------------------------------
 # Portfolio
