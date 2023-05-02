@@ -24,6 +24,7 @@ a {
 a:hover {
   color: #340e85;
   text-decoration: none;
+  cursor: pointer !important;
 }
 
 
@@ -276,11 +277,15 @@ svg {
 #header .students {
   float: left;
 }
-
-.main-link {
-  color: red;
+.main-link{
   font-weight: 600;
 }
+.main-link  a{
+  color: red;
+  font-weight: 700;
+}
+
+
 
 .students img {
   width: 30px;
@@ -1004,6 +1009,9 @@ a {
   color: #8d8c8c ;
 }
 
+.review-img{
+  max-height: 240px;
+}
 
 
 /*--------------------------------------------------------------
