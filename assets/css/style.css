@@ -54,6 +54,10 @@ a:hover {
   display: inline;
 }
 
+#myModal2 {
+  --bs-modal-width: 750px;
+}
+
 
 /*==================================know about us more button start=========================*/
 
